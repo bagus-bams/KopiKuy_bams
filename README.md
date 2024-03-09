@@ -1,1 +1,1 @@
-# KopiKuy_bams
+# kopikuy-bams

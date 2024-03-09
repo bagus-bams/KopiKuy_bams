@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <title>Produk</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap-icons.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+
+      nav,
+      section,
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      @font-face {
+        src: url(../fonts/poppins.woff2);
+        font-family: "Poppins";
+      }
+      body {
+        font-family: "Poppins";
+      }
+
+      a {
+        text-decoration: none;
+        color: unset;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      nav {
+        background-color: rgb(8, 95, 8);
+        box-shadow: 0 3px 7px -2px black;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: fixed;
+        z-index: 500;
+      }
+
+      img.logo {
+        height: 40px;
+        margin-left: 20px;
+      }
+
+      div.navigasi {
+        margin-left: auto;
+        margin-right: 15px;
+      }
+      nav a {
+        color: whitesmoke;
+        padding-left: 8px;
+        padding-right: 8px;
+      }
+
+      a.shop {
+        margin-right: 100px;
+      }
+      a.chat {
+        margin-right: 30px;
+        background-color: rgb(8, 69, 8);
+        color: #fff;
+        padding-top: 5px;
+        padding-right: 15px;
+        padding-bottom: 5px;
+        padding-left: 15px;
+        border-radius: 10px;
+      }
+
+      /* header */
+      header {
+        padding-top: 100px;
+        /* padding-bottom: 80px; */
+        /* margin-bottom: 80px; */
+      }
+      header h1 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      header p {
+        margin-bottom: 20px;
+        font-size: 18px;
+        text-align: center;
+      }
+      hr {
+        border: solid 5px green;
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+
+      section.jenis-kopi {
+        position: relative;
+        text-align: center;
+      }
+
+      /* Produk */
+      section.produk {
+        background-image: url(../images/background/bg-review.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        padding-right: 40px;
+        /* justify-content: space-around; */
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      /* section.produk h2{
+        margin-bottom: 20px;
+        width: 100%;
+      } */
+
+      div.etalase {
+        /* width: 30%; */
+        /* display: flex; */
+        flex-wrap: wrap;
+        /* padding: 35px 50px; */
+        box-shadow: 0px 0px 12px -10px #000;
+        background-color: #fff;
+        margin: 15px;
+      }
+
+      div.etalase img {
+        width: auto;
+        height: 150px;
+        object-fit: cover;
+        align-items: center;
+        padding-bottom: 10px;
+      }
+
+      div.keterangan {
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+        /* width: calc(100% - 75px); */
+      }
+
+      div.keterangan p {
+        width: 70%;
+        text-align: center;
+        font-size: small;
+      }
+      div.keterangan > p {
+        display: inline;
+        align-items: end;
+      }
+
+      /* Footer */
+
+      footer {
+        background-color: rgb(8, 69, 8);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        color: #fff;
+        padding-right: 40px;
+        padding-left: 40px;
+      }
+
+      footer div.navigasi {
+        margin-left: 20px;
+        margin-right: auto;
+      }
+
+      footer div.navigasi a {
+        padding: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .navigasi {
+          display: none;
+        }
+
+        a.shop {
+          margin-right: 20px;
+          margin-left: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img class="logo" src="images/logo/logo_kuy.png" />
+      <div class="navigasi">
+        <a href="#best-seller">Best Seller</a><a href="#our-team">Our Team</a
+        ><a href="#review">Review</a><a href="#contact-us">Contact Us</a>
+      </div>
+      <a class="shop" href="produk.html">Shop</a
+      ><a
+        class="chat"
+        href="https://wa.me/628123456?text=Saya ingin bertanya"
+        target="_blank"
+        >Chat
+      </a>
+    </nav>
+    <header>
+      <h1>Pilih Produk Anda</h1>
+      <p>
+        Kualitas terbaik biji kopi pilihan, fresh diambil langsung dari petani.
+      </p>
+    </header>
+    <hr class="border border-primary border-3" />
+    <section class="jenis-kopi" id="jenis-kopi">
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Pilih Jenis Kopi</option>
+        <option value="1">Arabica</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </section>
+    <section class="produk" id="produk">
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+      <div class="etalase">
+        <img src="./images/produk/product_capuchino.jpg" alt="customer1" />
+        <p style="font-size: small">Kopi Arabica Sidikalang</p>
+        <div class="row" class="keterangan">
+          <div class="col-sm-6">1.000 Gram</div>
+          <div class="col-sm-6" style="color: blue">Rp, 148.000</div>
+        </div>
+        <button type="button" class="btn btn-success">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-basket"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+            ></path></svg
+          >BELI
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="navigasi">
+        <a href="#best-seller">Best Seller</a><a href="#our-team">Our Team</a
+        ><a href="#review">Review</a><a href="#contact-us">Contact Us</a>
+      </div>
+      <p>Copyright kopi kuy: © 2023 Kopi Kuy. All Rights Reserved</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+  </body>
+</html>
